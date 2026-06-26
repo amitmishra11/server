@@ -803,6 +803,7 @@ export default defineComponent({
 				display: flex;
 				align-items: center;
 				text-align: start;
+				cursor: pointer;
 				// Fill cell height and width
 				width: 100%;
 				height: 100%;
@@ -826,8 +827,13 @@ export default defineComponent({
 				}
 			}
 
+			span.files-list__row-name-link {
+				cursor: pointer;
+			}
+
 			.files-list__row-name-text {
 				color: var(--color-main-text);
+				cursor: pointer;
 				// Make some space for the outline
 				padding: var(--default-grid-baseline) calc(2 * var(--default-grid-baseline));
 				padding-inline-start: -10px;
@@ -998,6 +1004,7 @@ export default defineComponent({
 
 		.files-list__row-name-text {
 			margin: 0;
+			cursor: pointer;
 			// Ensure that the outline is not too close to the text.
 			margin-inline-start: -4px;
 			padding: 0px 4px;
